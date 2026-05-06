@@ -17,9 +17,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'Outfit', 'sans-serif'],
-        display: ['Syne', 'Plus Jakarta Sans', 'sans-serif'],
-        archivo: ['Archivo', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
+        archivo: ['Inter', 'sans-serif'],
       },
 
       backgroundImage: {
