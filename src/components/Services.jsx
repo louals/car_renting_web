@@ -59,7 +59,7 @@ const Services = () => {
                 <div className="w-10 h-px bg-white/40" />
                 <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-white/40">Nos Standards</span>
               </div>
-              <h2 className="text-5xl md:text-7xl font-black uppercase leading-[0.85] tracking-tighter mb-8 text-white">
+              <h2 className="text-4xl md:text-7xl font-black uppercase leading-[0.85] tracking-tighter mb-8 text-white">
                 L'Avantage <br /> <span className="text-white/20">TH</span> <br /> Location
               </h2>
             </motion.div>

@@ -145,7 +145,7 @@ const Hero = () => {
               Expérience Automobile d'Élite
             </div>
 
-            <h1 className="text-[clamp(4rem,10vw,9rem)] font-black leading-[0.85] text-white">
+            <h1 className="text-[clamp(3rem,10vw,9rem)] font-black leading-[0.85] text-white">
               <div><SplitReveal text="ROULEZ" delay={0.8} /></div>
               <div className="text-white/20">
                 <SplitReveal text="VERS" delay={1.1} />

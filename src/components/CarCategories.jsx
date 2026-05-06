@@ -46,7 +46,7 @@ const CategoryPanel = ({ cat, progress, index }) => {
         <div className="relative h-full flex flex-col justify-end p-8 md:p-16">
           <motion.div style={{ y: yText }} className="flex flex-col">
 
-            <h2 className="text-[12vw] font-black uppercase leading-[0.8] text-white tracking-tighter">
+            <h2 className="text-[14vw] md:text-[12vw] font-black uppercase leading-[0.8] text-white tracking-tighter">
               {cat.title}
             </h2>
           </motion.div>
