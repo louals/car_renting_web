@@ -1,3 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&family=Archivo:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-luxury-black text-luxury-accent font-sans selection:bg-luxury-accent selection:text-luxury-black;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+  
+  .glass-dark {
+    @apply backdrop-blur-xl bg-black/40 border border-white/5;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .btn-luxury {
+    @apply px-8 py-3 rounded-full bg-luxury-accent text-luxury-black font-semibold transition-all duration-300 hover:bg-opacity-90 hover:scale-105 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 rounded-full border border-white/20 hover:border-white/40 transition-all duration-300;
+  }
+}
+@layer components {
+  /* Ultra-dark background color */
+  .bg-luxury-black {
+    @apply bg-[#030303];
+  }
+
+  /* Main Luxury Button - White to Black */
+  .btn-luxury-2 {
+    @apply px-8 py-4 bg-white text-black text-sm font-bold uppercase tracking-widest rounded-full transition-all duration-300 ease-out;
+  }
+  .btn-luxury-2:hover {
+    @apply bg-white/90 shadow-[0_0_30px_rgba(255,255,255,0.3)];
+  }
+
+  /* Outline Button */
+  .btn-outline-2 {
+    @apply text-sm font-bold uppercase tracking-widest text-white/80 transition-colors duration-300;
+  }
+  .btn-outline-2:hover {
+    @apply text-white;
+  }
+
+  /* Glassmorphism Panel */
+  .glass-panel {
+    @apply bg-white/[0.01] backdrop-blur-2xl;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Ensure you have a 'font-display' defined in your tailwind config, 
+     usually a strong geometric sans-serif like Syne, Archivo, or Anton */
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}

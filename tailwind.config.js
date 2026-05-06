@@ -7,18 +7,30 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink:  { 900:"#0E2330", 800:"#132B39", 700:"#1A3646", 100:"#E4EBEF" },
-        moss: { 500:"#3F6F54", 400:"#55936F", 300:"#7AB791" },
-        cream:{ 50:"#F7F1E6", 100:"#EFE7D6" },
+        luxury: {
+          black: "#050505",
+          charcoal: "#0D0D0D",
+          darkGray: "#141414",
+          silver: "#A3A3A3",
+          accent: "#FFFFFF",
+          gold: "#D4AF37", // Subtle gold for selective accents
+        },
       },
-      borderRadius: { brand:"1.25rem" },
-      boxShadow: {
-        soft:"0 10px 30px -10px rgba(0,0,0,.1)",
+      fontFamily: {
+        sans: ['Inter', 'Outfit', 'sans-serif'],
+        display: ['Syne', 'Plus Jakarta Sans', 'sans-serif'],
+        archivo: ['Archivo', 'sans-serif'],
       },
+
       backgroundImage: {
-        "brand-radial":"radial-gradient(900px 420px at 70% 10%, rgba(122,183,145,.15), transparent)",
+        'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
+        'noise': "url('https://www.transparenttextures.com/patterns/carbon-fibre.png')",
+      },
+      animation: {
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },
   plugins: [],
 };
+
